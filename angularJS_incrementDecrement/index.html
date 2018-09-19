@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="ng-click">
+
+<head>
+    <meta charset="utf-8" />
+    <title>AngularJS Plunker</title>
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <link rel="stylesheet" href="style.css" />
+    <script data-require="angular.js@1.5.x" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.11/angular.min.js"
+        data-semver="1.5.11"></script>
+    <script src="app.js"></script>
+</head>
+
+<body ng-controller="main">
+
+    <input type="button" value="Click to increment" ng-click="increment()" />
+    <input type="button" value="Click to decrement" ng-click="decrement()" />
+    <input type="button" value="Reset" ng-click="reset()" />
+
+    <br><br>
+    <div>
+        {{count}}
+    </div>
+
+</body>
+
+</html>
