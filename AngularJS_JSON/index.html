@@ -43,21 +43,18 @@
                 <td>{{item.Category}}</td>
                 <td>{{item.Book}}</td>
                 <td>{{item.Publishers}}</td>
-                <td>{{item.Price}}</td>
+                <td>{{item.Price | currency}}</td>
                 <td>{{item.Copies_Sold}}</td>
                 <td><img ng-src="{{item.coverURL}}" width="100"></td>
             </tr>
 
         </tbody>
 
-
-
     </table>
 
     <p>
         <button class="btn btn-primary" ng-click="loadDataPromise()">Load Data With Promise</button>
     </p>
-
 
 
 </body>
