@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html ng-app="tanerApp">
+
+<head>
+    <meta charset="utf-8" />
+    <title>AngularJS Plunker</title>
+    <link data-require="bootstrap@*" data-semver="4.1.1" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" />
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <link rel="stylesheet" href="style.css" />
+    <script data-require="angular.js@1.5.x" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.11/angular.min.js"
+        data-semver="1.5.11"></script>
+    <script src="app.js"></script>
+</head>
+
+<body ng-controller="ajaxController">
+
+    <p>
+        <input type="text" ng-model="query" />
+    </p>
+
+    <table class="table table-stribed table-bordered">
+
+        <!-- Let's create the headers -->
+
+        <thead>
+            <tr>
+                <th><a href="" ng-click="sortField='Category'">Category </a> </th>
+                <th><a href="" ng-click="sortField='Book'">Book</a></th>
+                <th><a href="" ng-click="sortField='Publishers'">Publishers</a></th>
+                <th><a href="" ng-click="sortField='Price'">Price</a></th>
+                <th><a href="" ng-click="sortField='Copies_Sold'">Copies_Sold</a></th>
+                <th><a href="" ng-click="sortField='Cover'">Cover</a></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr ng-hide="products.length">
+                <td colspan="6" class="text-center">No Data</td>
+
+            </tr>
+
+            <tr ng-repeat="item in products | filter:query | orderBy:sortField">
+                <td>{{item.Category}}</td>
+                <td>{{item.Book}}</td>
+                <td>{{item.Publishers}}</td>
+                <td>{{item.Price}}</td>
+                <td>{{item.Copies_Sold}}</td>
+                <td><img ng-src="{{item.coverURL}}" width="100"></td>
+            </tr>
+
+        </tbody>
+
+
+
+    </table>
+
+    <p>
+        <button class="btn btn-primary" ng-click="loadDataPromise()">Load Data With Promise</button>
+    </p>
+
+
+
+</body>
+
+</html>

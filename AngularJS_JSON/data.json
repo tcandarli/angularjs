@@ -1,0 +1,41 @@
+ 
+    [{  
+        "Category": "Programming Languages",  
+        "Book": "Mastering JavaScript",  
+        "Publishers": "Wrox Publication",  
+        "Price": 50.00,
+        "Copies_Sold": 1231231,
+        "coverURL": "https://www.bookish.com/wp-content/uploads/9780823420476_d2861-1.jpg"
+    },  
+    {  
+        "Category": "Algorithms",  
+        "Book": "Professional MVC 5",  
+        "Publishers": "Oreilly Publication",  
+        "Price": 30.50 , 
+        "Copies_Sold": 1231231,
+        "coverURL": "https://www.bookish.com/wp-content/uploads/9780823420476_d2861-1.jpg"
+    },  
+    {  
+        "Category": "Frameworks",  
+        "Book": "AngularJs",  
+        "Publishers": "Cybertek Publication",  
+        "Price": 15.00, 
+        "Copies_Sold": 10000000,
+        "coverURL": "https://www.bookish.com/wp-content/uploads/9780823420476_d2861-1.jpg"    }  
+    ,
+    {  
+        "Category": "Novels",  
+        "Book": "Why",  
+        "Publishers": "Unknown",  
+        "Price": 15.00  ,
+        "Copies_Sold": 5654,
+        "coverURL": "https://www.bookish.com/wp-content/uploads/9780823420476_d2861-1.jpg"    }  ,
+    {  
+        "Category": "Novels",  
+        "Book": "How",  
+        "Publishers": "My publisher",  
+        "Price": 17.50,  
+        "Copies_Sold": 123,
+        "coverURL": "https://www.bookish.com/wp-content/uploads/9780823420476_d2861-1.jpg"    }]   
+    
+
