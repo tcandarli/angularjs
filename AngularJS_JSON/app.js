@@ -11,6 +11,7 @@ app.controller('ajaxController', ['$scope', '$http', function ($scope, $http) {
 
         });
         $scope.sortField = 'Category';
+        $scope.reverse = true;
 
     }
 

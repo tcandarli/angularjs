@@ -24,12 +24,12 @@
 
         <thead>
             <tr>
-                <th><a href="" ng-click="sortField='Category'">Category </a> </th>
-                <th><a href="" ng-click="sortField='Book'">Book</a></th>
-                <th><a href="" ng-click="sortField='Publishers'">Publishers</a></th>
-                <th><a href="" ng-click="sortField='Price'">Price</a></th>
-                <th><a href="" ng-click="sortField='Copies_Sold'">Copies_Sold</a></th>
-                <th><a href="" ng-click="sortField='Cover'">Cover</a></th>
+                <th><a href="" ng-click="sortField='Category'; reverse=!reverse">Category </a> </th>
+                <th><a href="" ng-click="sortField='Book'; reverse=!reverse">Book</a></th>
+                <th><a href="" ng-click="sortField='Publishers'; reverse=!reverse">Publishers</a></th>
+                <th><a href="" ng-click="sortField='Price'; reverse=!reverse">Price</a></th>
+                <th><a href="" ng-click="sortField='Copies_Sold'; reverse=!reverse">Copies_Sold</a></th>
+                <th>Cover</th>
             </tr>
         </thead>
 
@@ -39,7 +39,7 @@
 
             </tr>
 
-            <tr ng-repeat="item in products | filter:query | orderBy:sortField">
+            <tr ng-repeat="item in products | filter:query | orderBy:sortField:reverse">
                 <td>{{item.Category}}</td>
                 <td>{{item.Book}}</td>
                 <td>{{item.Publishers}}</td>
